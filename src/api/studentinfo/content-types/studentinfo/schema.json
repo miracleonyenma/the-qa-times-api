@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "studentinfos",
+  "info": {
+    "singularName": "studentinfo",
+    "pluralName": "studentinfos",
+    "displayName": "studentinfo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::student.student",
+      "mappedBy": "studentinfo"
+    }
+  }
+}
