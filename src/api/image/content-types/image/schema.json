@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "images",
+  "info": {
+    "singularName": "image",
+    "pluralName": "images",
+    "displayName": "Image"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "url": {
+      "type": "text"
+    },
+    "caption": { "type": "string" },
+    "related": {
+      "type": "relation",
+      "relation": "morphToMany"
+    }
+  }
+}

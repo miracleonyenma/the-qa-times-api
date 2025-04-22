@@ -22,6 +22,12 @@
       "relation": "manyToOne",
       "target": "api::question.question",
       "inversedBy": "answers"
+    },
+    "images": {
+      "type": "relation",
+      "relation": "morphMany",
+      "target": "api::image.image",
+      "morphBy": "related"
     }
   }
 }
